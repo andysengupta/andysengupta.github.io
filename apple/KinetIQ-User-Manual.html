@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinetiq — User Manual</title>
+<style>
+  :root{--indigo:#4f46e5;--gold:#b8860b;--green:#10b981;--ink:#0f172a;--muted:#475569;--faint:#64748b;--line:#e2e8f0}
+  *{box-sizing:border-box}
+  body{margin:0;background:#ffffff;color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+    line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+  header.hero{background:linear-gradient(135deg,#eef2ff 0%,#f8fafc 100%);border:1px solid var(--line);
+    border-radius:14px;padding:30px 30px;margin-bottom:30px}
+  h1{font-size:30px;letter-spacing:-.4px;margin:0 0 6px}
+  .hero p{margin:0;color:var(--muted);font-size:15px}
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .toc a{font-size:12.5px;font-weight:600;text-decoration:none;color:var(--muted);
+    background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+  .toc a:hover{color:var(--indigo);border-color:#c7d2fe}
+  h2{font-size:20px;margin:36px 0 10px;letter-spacing:-.2px;scroll-margin-top:20px}
+  h3{font-size:15px;margin:20px 0 4px}
+  p,li{font-size:15px;color:#334155}
+  a{color:var(--indigo)}
+  ul,ol{padding-left:22px}
+  li{margin:4px 0}
+  .card{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:18px 0}
+  .tip{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:10px;padding:14px 16px;margin:16px 0;color:#065f46;font-size:14.5px}
+  .score-row{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+  .tier{flex:1;min-width:140px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:#fff}
+  .tier b{display:block;font-size:13px;margin-bottom:2px}
+  .tier span{font-size:12.5px;color:var(--faint)}
+  .step{counter-increment:s;position:relative;padding-left:40px;margin:12px 0}
+  .steps{counter-reset:s;list-style:none;padding:0}
+  .step::before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--indigo);
+    color:#fff;border-radius:7px;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+  table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--faint)}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--faint);font-size:13px}
+  footer a{color:var(--faint)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Kinetiq — User Manual</h1>
+    <p>Measure how smooth your ride really feels, and turn it into a Comfort Score.</p>
+    <nav class="toc">
+      <a href="#what">What it does</a>
+      <a href="#start">Getting started</a>
+      <a href="#record">Recording a ride</a>
+      <a href="#score">The Comfort Score</a>
+      <a href="#journal">Journal &amp; trends</a>
+      <a href="#premium">Premium</a>
+      <a href="#permissions">Permissions</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#faq">FAQ</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <h2 id="what">What Kinetiq does</h2>
+  <p>Kinetiq uses your iPhone's built-in motion sensors and GPS to measure the quality of a ride — in a
+  car, bus, train, or any vehicle — and scores how smooth or rough it was. As you ride, it tracks
+  vibration, smoothness, and sudden jerk events (hard braking, potholes, sharp turns) and maps your
+  route, coloring it by how comfortable each stretch was.</p>
+  <div class="tip"><b>Recording and scoring are free, forever.</b> No account is required to record a ride and see your score.</div>
+
+  <h2 id="start">Getting started</h2>
+  <ol class="steps" style="list-style:none;padding:0">
+    <li class="step">Download Kinetiq from the App Store and open it.</li>
+    <li class="step">When prompted, allow <b>Motion &amp; Fitness</b> and <b>Location</b> access — these power the score and route map.</li>
+    <li class="step">(Optional) Sign in with Apple or Google to sync your ride history across devices. You can skip this and use the app anonymously.</li>
+    <li class="step">Mount or rest your phone securely in the vehicle and you're ready to record.</li>
+  </ol>
+
+  <h2 id="record">Recording a ride</h2>
+  <ol>
+    <li>On the home screen, choose your <b>transport mode</b> (car, bus, train, etc.).</li>
+    <li>Tap <b>Record</b> to start. The live screen shows your current Comfort Score, elapsed time, distance, speed, and any events as they're detected.</li>
+    <li>Keep the app open during the ride — Kinetiq records in the foreground and <b>keeps the screen awake automatically</b> so tracking is never interrupted.</li>
+    <li>Tap <b>Finish</b> when you arrive. Your ride is analyzed and saved to the Journal with a final score, route map, and event breakdown.</li>
+  </ol>
+  <div class="tip">For best results, place the phone on a stable surface or mount rather than holding it — loose handling adds vibration that isn't from the vehicle.</div>
+
+  <h2 id="score">The Comfort Score</h2>
+  <p>Every ride gets a single Comfort Score from <b>0 to 100</b>. Higher is smoother. The score blends
+  three things measured continuously by your phone's accelerometer and gyroscope:</p>
+  <ul>
+    <li><b>Vibration</b> — the constant background roughness of the surface and vehicle.</li>
+    <li><b>Smoothness</b> — how steady acceleration, braking, and cornering are.</li>
+    <li><b>Jerk events</b> — sudden spikes like potholes, hard stops, or sharp turns, counted and timestamped.</li>
+  </ul>
+  <div class="score-row">
+    <div class="tier"><b style="color:#10b981">Excellent</b><span>Silky, steady ride — very few events.</span></div>
+    <div class="tier"><b style="color:#84cc16">Good</b><span>Comfortable with the occasional bump.</span></div>
+    <div class="tier"><b style="color:#f59e0b">Fair</b><span>Noticeably rough or uneven in places.</span></div>
+    <div class="tier"><b style="color:#ef4444">Rough</b><span>Frequent jolts and hard events.</span></div>
+  </div>
+  <p>Your route map is colored along its length using the same scale, so you can see exactly <i>where</i>
+  the ride got rough.</p>
+
+  <h2 id="journal">Journal &amp; trends</h2>
+  <p>The <b>Journal</b> keeps a history of your rides — each with its score, date, distance, mode, route,
+  and detected events. Tap any ride to see its segment-level map and event detail.</p>
+  <p>The <b>Trends</b> view turns your history into insights: how your ride comfort changes over time, comparisons
+  between routes, and patterns across modes of transport.</p>
+
+  <h2 id="premium">Kinetiq Premium</h2>
+  <p>Recording and scoring stay free. Premium unlocks memory and depth:</p>
+  <ul>
+    <li>Unlimited ride history (the free tier keeps your most recent rides)</li>
+    <li>Trends, insights &amp; route comparison</li>
+    <li>Segment-level maps &amp; full event detail</li>
+    <li>Export your data as CSV or GPX, plus advanced charts</li>
+    <li>Auto ride detection (coming soon)</li>
+  </ul>
+  <p>Premium is offered as an auto-renewable subscription (Monthly or Annual, with a free trial on the
+  Annual plan). Subscriptions renew at the listed price until cancelled, and can be managed or cancelled
+  anytime in your App Store account settings. See the
+  <a href="https://andysengupta.github.io/apple/kinetiq-privacy">Privacy Policy</a> and
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a>.</p>
+
+  <h2 id="permissions">Permissions Kinetiq asks for</h2>
+  <table>
+    <tr><th>Permission</th><th>Why it's needed</th></tr>
+    <tr><td><b>Motion &amp; Fitness</b></td><td>Reads the accelerometer and gyroscope to measure vibration, smoothness, and jerk events.</td></tr>
+    <tr><td><b>Location (While Using)</b></td><td>Maps your route and colors it by ride smoothness. Used only while you're recording.</td></tr>
+  </table>
+  <p>You can grant or revoke either permission anytime in <b>iOS Settings → Privacy &amp; Security</b>, or under
+  <b>Settings → Kinetiq</b>.</p>
+
+  <h2 id="privacy">Privacy</h2>
+  <p>Your motion and location data is processed on your device to generate your score and route. If you
+  sign in, your ride summaries sync to your account so they're available across devices. Kinetiq does not
+  sell your data or use it for third-party advertising. Full details are in the
+  <a href="https://andysengupta.github.io/apple/kinetiq-privacy">Privacy Policy</a>.</p>
+
+  <h2 id="faq">FAQ</h2>
+  <h3>Do I need to keep the screen on?</h3>
+  <p>Kinetiq keeps the screen awake for you while recording, so just leave the app open for the ride. It
+  records in the foreground rather than in the background.</p>
+  <h3>Does it work without signing in?</h3>
+  <p>Yes. Sign-in is optional and only used to sync your history across devices.</p>
+  <h3>Can I use it on iPad?</h3>
+  <p>Yes — Kinetiq runs on iPhone and iPad.</p>
+  <h3>How do I cancel Premium?</h3>
+  <p>Open <b>Settings → [your name] → Subscriptions</b> on your device, select Kinetiq, and cancel. Your
+  Premium features remain until the end of the current billing period.</p>
+  <h3>How do I restore a purchase?</h3>
+  <p>On the Premium screen, tap <b>Restore purchase</b> while signed in to the same Apple ID used originally.</p>
+
+  <h2 id="support">Support</h2>
+  <p>Need help or have feedback? Email <a href="mailto:andysengupta@outlook.com">andysengupta@outlook.com</a>
+  and we'll get back to you.</p>
+
+  <footer>© 2026 Kinetiq · <a href="https://andysengupta.github.io/apple/kinetiq-privacy">Privacy Policy</a></footer>
+</div>
+</body>
+</html>
